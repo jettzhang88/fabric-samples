@@ -22,7 +22,7 @@ const CommercialPaper = require('../contract/lib/paper.js');
 
 // A wallet stores a collection of identities for use
 //const wallet = new FileSystemWallet('../user/isabella/wallet');
-const wallet = new FileSystemWallet('../identity/user/isabella/wallet');
+const wallet = new FileSystemWallet('../identity/user/balaji/wallet');
 
 // Main program function
 async function main() {
