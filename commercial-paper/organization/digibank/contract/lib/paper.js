@@ -14,6 +14,12 @@ const cpState = {
     REDEEMED: 3
 };
 
+const docState = {
+    ISSUED: 'ISSUED',
+    SENT: 'SENT',
+    RECEIVED: 'RECEIVED'
+};
+
 /**
  * CommercialPaper class extends State class
  * Class will be used by application and smart contract to define a paper
@@ -47,6 +53,14 @@ class CommercialPaper extends State {
     /**
      * Useful methods to encapsulate commercial paper states
      */
+    setDocIssued() {
+        this.currentState = docState.ISSUED;
+    }
+
+    setDocSent() {
+        this.currentState = docState.SENT;
+    }
+
     setIssued() {
         this.currentState = cpState.ISSUED;
     }
@@ -90,8 +104,8 @@ class CommercialPaper extends State {
     /**
      * Factory method to create a commercial paper object
      */
-    static createInstance(issuer, paperNumber, issueDateTime, maturityDateTime, faceValue) {
-        return new CommercialPaper({ issuer, paperNumber, issueDateTime, maturityDateTime, faceValue });
+    static createInstance(issuer, paperNumber, issueDateTime, maturityDateTime, faceValue, docContext) {
+        return new CommercialPaper({ issuer, paperNumber, issueDateTime, maturityDateTime, faceValue, docContext});
     }
 
     static getClass() {
