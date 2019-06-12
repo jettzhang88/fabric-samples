@@ -27,6 +27,12 @@ class PaperList extends StateList {
     async updatePaper(paper) {
         return this.updateState(paper);
     }
+
+    async get(){
+        const response = {};
+        this.ctx.stub.getTransient().forEach((v, k) => {response[k] = v.toString()});
+        return JSON.stringify(response);
+    }
 }
 
 
