@@ -30,19 +30,46 @@ class PaperList extends StateList {
 
     async get(){
         const response = [];
-        const fuck = await this.ctx.stub.getQueryResult('{ "selector": { "_id": { "$gt": null } } }');
-        for (let shit of fuck) {
-            response.push(shit);
+        const iterator = await this.ctx.stub.getQueryResult('{ "selector": { "_id": { "$gt": null } } }');
+        let result = await iterator.next();
+        while (!result.done) {
+            response.push({
+                key: result.value.key,
+                value: result.value.value
+            });
+            result = await iterator.next();
         }
+
         return JSON.stringify(response);
     }
 
     async get_with_empty(){
         const response = [];
-        const fuck = await this.ctx.stub.getQueryResult('');
-        for (let shit of fuck) {
-            response.push(shit);
+        const iterator = await this.ctx.stub.getQueryResult('');
+        let result = await iterator.next();
+        while (!result.done) {
+            response.push({
+                key: result.value.key,
+                value: result.value.value
+            });
+            result = await iterator.next();
         }
+
+        return JSON.stringify(response);
+    }
+
+    async get_with_empty2(){
+        const response = [];
+        const iterator = await this.ctx.stub.getQueryResult('{}');
+        let result = await iterator.next();
+        while (!result.done) {
+            response.push({
+                key: result.value.key,
+                value: result.value.value
+            });
+            result = await iterator.next();
+        }
+
         return JSON.stringify(response);
     }
 }
