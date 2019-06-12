@@ -35,7 +35,7 @@ class PaperList extends StateList {
         while (!result.done) {
             response.push({
                 key: result.value.key,
-                value: result.value.value
+                value: result.value.value.toString()
             });
             result = await iterator.next();
         }
@@ -50,7 +50,7 @@ class PaperList extends StateList {
         while (!result.done) {
             response.push({
                 key: result.value.key,
-                value: result.value.value
+                value: result.value.value.toString()
             });
             result = await iterator.next();
         }
@@ -65,7 +65,7 @@ class PaperList extends StateList {
         while (!result.done) {
             response.push({
                 key: result.value.key,
-                value: result.value.value
+                value: result.value.value.toString()
             });
             result = await iterator.next();
         }
