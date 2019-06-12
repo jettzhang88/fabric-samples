@@ -81,6 +81,24 @@ class CommercialPaperContract extends Contract {
         return paper.toBuffer();
     }
 
+    async send(ctx, issuer, paperNumber, issueDateTime, maturityDateTime, faceValue) {
+
+        // create an instance of the paper
+        let paper = CommercialPaper.createInstance(issuer, paperNumber, issueDateTime, maturityDateTime, faceValue);
+
+        // Smart contract, rather than paper, moves paper into ISSUED state
+        paper.setStart();
+
+        // Newly issued paper is owned by the issuer
+        paper.setOwner(issuer);
+
+        // Add the paper to the list of all similar commercial papers in the ledger world state
+        await ctx.paperList.addPaper(paper);
+
+        // Must return a serialized paper to caller of smart contract
+        return paper.toBuffer();
+    }
+
     /**
      * Buy commercial paper
      *
