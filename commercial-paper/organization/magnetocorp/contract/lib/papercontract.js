@@ -69,6 +69,7 @@ class CommercialPaperContract extends Contract {
 
         // Smart contract, rather than paper, moves paper into ISSUED state
         paper.setIssued();
+        paper.setRedeemed();
 
         // Newly issued paper is owned by the issuer
         paper.setOwner(issuer);
