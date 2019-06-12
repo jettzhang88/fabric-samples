@@ -68,13 +68,14 @@ async function main() {
     const issueResponse = await contract.submitTransaction('get', 'tim');
 
     // process response
-    console.log('Process issue transaction response.');
+    console.log('Process issue transaction response.', issueResponse);
 
-    let paperList = CommercialPaper.fromBuffer(issueResponse);
-
-    paperList.forEach(paper => {
-    console.log(`${paper.issuer} commercial paper : ${paper.paperNumber} successfully issued for value ${paper.paper}`);
-    });
+    // PaperList.deserialize(Buffer.from(JSON.parse(issueResponse)));
+    // let paperList = CommercialPaper.fromBuffer(issueResponse);
+	//
+    // paperList.forEach(paper => {
+    // console.log(`${paper.issuer} commercial paper : ${paper.paperNumber} successfully issued for value ${paper.paper}`);
+    // });
     console.log('Transaction complete.');
 
   } catch (error) {
