@@ -52,6 +52,11 @@ class CommercialPaperContract extends Contract {
         console.log('Instantiate the contract');
     }
 
+    async issue(ctx, issuer) {
+        // Add the paper to the list of all similar commercial papers in the ledger world state
+        return ctx.paperList;
+    }
+
     /**
      * Issue commercial paper
      *
