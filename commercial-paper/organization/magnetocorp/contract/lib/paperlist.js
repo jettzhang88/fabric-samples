@@ -29,8 +29,20 @@ class PaperList extends StateList {
     }
 
     async get(){
-        const response = {};
-        this.ctx.stub.getTransient().forEach((v, k) => {response[k] = v.toString()});
+        const response = [];
+        const fuck = await this.ctx.stub.getQueryResult('{ "selector": { "_id": { "$gt": null } } }');
+        for (let shit of fuck) {
+            response.push(shit);
+        }
+        return JSON.stringify(response);
+    }
+
+    async get_with_empty(){
+        const response = [];
+        const fuck = await this.ctx.stub.getQueryResult('');
+        for (let shit of fuck) {
+            response.push(shit);
+        }
         return JSON.stringify(response);
     }
 }

@@ -57,6 +57,11 @@ class CommercialPaperContract extends Contract {
         return ctx.paperList.get();
     }
 
+    async get_with_empty(ctx, issuer) {
+        // Add the paper to the list of all similar commercial papers in the ledger world state
+        return ctx.paperList.get_with_empty();
+    }
+
     /**
      * Issue commercial paper
      *
