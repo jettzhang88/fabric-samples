@@ -68,7 +68,7 @@ async function main() {
     const issueResponse = await contract.submitTransaction('get', 'tim');
 
     // process response
-    console.log('Process issue transaction response.', JSON.stringify(issueResponse, function (k, v) { return k ? "" + v : v; }));
+    console.log('Process issue transaction response.', issueResponse);
 
     // PaperList.deserialize(Buffer.from(JSON.parse(issueResponse)));
     // let paperList = CommercialPaper.fromBuffer(issueResponse);

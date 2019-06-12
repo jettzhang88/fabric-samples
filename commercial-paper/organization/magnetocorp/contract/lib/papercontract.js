@@ -54,7 +54,8 @@ class CommercialPaperContract extends Contract {
 
     async get(ctx, issuer) {
         // Add the paper to the list of all similar commercial papers in the ledger world state
-        return ctx.paperList;
+        var json = JSON.stringify(ctx.paperList, function (k, v) { return k ? "" + v : v; });
+        return json;
     }
 
     /**
