@@ -48,15 +48,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/commercial-paper/organization/digibank/contract/lib/documentcontract.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-794">
-              <caret line="11" column="50" selection-start-line="11" selection-start-column="50" selection-end-line="11" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/commercial-paper/organization/digibank/application/send.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="415">
@@ -68,8 +59,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/commercial-paper/organization/magnetocorp/contract/lib/papercontract.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-637">
-              <caret line="54" column="13" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
+            <state relative-caret-position="33">
+              <caret line="56" column="28" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="28" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -81,7 +72,7 @@
         <entry file="file://$PROJECT_DIR$/commercial-paper/organization/magnetocorp/application/get.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="284">
-              <caret line="70" column="70" selection-start-line="70" selection-start-column="70" selection-end-line="70" selection-end-column="70" />
+              <caret line="70" column="83" selection-start-line="70" selection-start-column="83" selection-end-line="70" selection-end-column="83" />
             </state>
           </provider>
         </entry>
@@ -110,8 +101,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/commercial-paper/organization/magnetocorp/contract/lib/paper.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="78" column="30" selection-start-line="78" selection-start-column="15" selection-end-line="78" selection-end-column="30" />
+            <state relative-caret-position="420">
+              <caret line="20" column="32" lean-forward="true" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -120,9 +111,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/commercial-paper/organization/magnetocorp/contract/ledger-api/state.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="384">
+              <caret line="65" column="9" lean-forward="true" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/commercial-paper/organization/magnetocorp/contract/lib/paperlist.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="76">
+              <caret line="11" column="15" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="15" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -133,7 +134,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/commercial-paper/organization/magnetocorp/contract/ledger-api/statelist.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1080">
+            <state relative-caret-position="517">
               <caret line="71" selection-start-line="71" selection-end-line="71" />
             </state>
           </provider>
@@ -343,12 +344,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1560220539200</updated>
-      <workItem from="1560220540575" duration="14220000" />
+      <workItem from="1560220540575" duration="14571000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14220000" />
+    <option name="totallyTimeSpent" value="14571000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-186" y="-1057" width="1920" height="1057" extended-state="6" />
@@ -362,7 +363,7 @@
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24973376" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="TypeScript" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.20824295" />
+      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.13774404" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" />
@@ -580,23 +581,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/commercial-paper/organization/digibank/application/send.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="50" column="14" selection-start-line="50" selection-start-column="14" selection-end-line="50" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/commercial-paper/organization/digibank/contract/lib/papercontract.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="662">
-          <caret line="156" column="25" lean-forward="true" selection-start-line="64" selection-start-column="10" selection-end-line="64" selection-end-column="15" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/commercial-paper/organization/magnetocorp/application/issue.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
@@ -614,36 +598,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/commercial-paper/organization/magnetocorp/contract/lib/papercontract.js">
+    <entry file="file://$PROJECT_DIR$/commercial-paper/organization/magnetocorp/contract/lib/paper.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-637">
-          <caret line="54" column="13" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
+        <state relative-caret-position="420">
+          <caret line="20" column="32" lean-forward="true" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/commercial-paper/organization/magnetocorp/contract/lib/paper.js">
+    <entry file="file://$PROJECT_DIR$/commercial-paper/organization/magnetocorp/contract/ledger-api/state.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="78" column="30" selection-start-line="78" selection-start-column="15" selection-end-line="78" selection-end-column="30" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state relative-caret-position="384">
+          <caret line="65" column="9" lean-forward="true" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/commercial-paper/organization/magnetocorp/contract/ledger-api/statelist.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
+        <state relative-caret-position="517">
           <caret line="71" selection-start-line="71" selection-end-line="71" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/commercial-paper/organization/magnetocorp/contract/lib/paperlist.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="76">
+          <caret line="11" column="15" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="15" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commercial-paper/organization/digibank/application/send.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="415">
+          <caret line="50" column="14" selection-start-line="50" selection-start-column="14" selection-end-line="50" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commercial-paper/organization/digibank/contract/lib/papercontract.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="662">
+          <caret line="156" column="25" lean-forward="true" selection-start-line="64" selection-start-column="10" selection-end-line="64" selection-end-column="15" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/commercial-paper/organization/magnetocorp/contract/lib/papercontract.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="56" column="28" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="28" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
@@ -653,7 +662,7 @@
     <entry file="file://$PROJECT_DIR$/commercial-paper/organization/magnetocorp/application/get.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="284">
-          <caret line="70" column="70" selection-start-line="70" selection-start-column="70" selection-end-line="70" selection-end-column="70" />
+          <caret line="70" column="83" selection-start-line="70" selection-start-column="83" selection-end-line="70" selection-end-column="83" />
         </state>
       </provider>
     </entry>
