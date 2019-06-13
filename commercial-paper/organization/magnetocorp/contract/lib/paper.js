@@ -14,6 +14,13 @@ const cpState = {
     REDEEMED: 3
 };
 
+const docState = {
+    ISSUED: 'ISSUED',
+    SENT: 'SENT',
+    ACCEPTED: 'ACCEPTED',
+    REJECTED_BY_RECEIVER: 'REJECTED_BY_RECEIVER'
+};
+
 /**
  * CommercialPaper class extends State class
  * Class will be used by application and smart contract to define a paper
@@ -24,6 +31,10 @@ class CommercialPaper extends State {
         console.log(obj.issuer);
         super(CommercialPaper.getClass(), [obj.issuer, obj.paperNumber]);
         Object.assign(this, obj);
+
+        console.log(this.getIssuer());
+        console.log(this.getOwner());
+        console.log(this.currentState);
     }
 
     /**
@@ -45,12 +56,48 @@ class CommercialPaper extends State {
         this.owner = newOwner;
     }
 
+    setStatus(status){
+        this.currentState = status;
+    }
+
+    setIssued() {
+        this.currentState = docState.ISSUED;
+    }
+
+    setSend() {
+        this.currentState = docState.SENT;
+    }
+
+    setAccepted() {
+        this.currentState = docState.ACCEPTED;
+    }
+
+    setRejected() {
+        this.currentState = docState.REJECTED_BY_RECEIVER;
+    }
+
+    isIssued() {
+        return this.currentState === docState.ISSUED;;
+    }
+
+    isSend() {
+        return this.currentState === docState.SENT;
+    }
+
+    isAccepted() {
+        return this.currentState === docState.ACCEPTED;
+    }
+
+    isRejected() {
+        return this.currentState === docState.REJECTED_BY_RECEIVER;
+    }
+
     /**
      * Useful methods to encapsulate commercial paper states
      */
-    setIssued() {
-        this.currentState = cpState.ISSUED;
-    }
+    // setIssued() {
+    //     this.currentState = cpState.ISSUED;
+    // }
 
     setStart() {
         this.currentState = 0;

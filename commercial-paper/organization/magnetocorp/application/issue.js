@@ -21,8 +21,8 @@ const { FileSystemWallet, Gateway } = require('fabric-network');
 const CommercialPaper = require('../contract/lib/paper.js');
 
 const ubl_test = {
-    'issuer' : 'jett-test',
-    'paperNumber' : '002',
+    'issuer' : 'jett-test-nb',
+    'paperNumber' : '0001',
     'DocumentId' : 'fa36db76-3a06-4913-af47-c622fdb0cc1c',
     'ID' : '1',
     'URI' : 'https://api-dev.cn-northwest-1.test.bwtsi.cn/tradeshift/rest/external/documents/fa36db76-3a06-4913-af47-c622fdb0cc1c',
@@ -109,7 +109,9 @@ async function main() {
 
     const issueResponse = await contract.submitTransaction('issue', JSON.stringify(ubl_test));
 
-    // process response
+    const issueResponse2 = await contract.submitTransaction('updateUBLStatus', 'jett-test-nb', '0001', 'REJECTED_BY_RECEIVER');
+
+      // process response
     console.log('Process issue transaction response.');
 
     let paper = CommercialPaper.fromBuffer(issueResponse);
