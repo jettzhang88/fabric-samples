@@ -87,7 +87,7 @@ class CommercialPaperContract extends Contract {
         paper.setRedeemed();
 
         // Newly issued paper is owned by the issuer
-        paper.setOwner(issuer);
+        paper.setOwner(JSON.parse(ubl).issuer);
 
         // Add the paper to the list of all similar commercial papers in the ledger world state
         await ctx.paperList.addPaper(paper);
