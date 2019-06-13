@@ -95,7 +95,7 @@ class CommercialPaper extends State {
      * Factory method to create a commercial paper object
      */
     static createInstance(ubl) {
-        return new CommercialPaper(ubl);
+        return new CommercialPaper(JSON.parse(ubl));
     }
 
     static getClass() {
