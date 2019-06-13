@@ -107,9 +107,7 @@ async function main() {
     // issue commercial paper
     console.log('Submit commercial paper issue transaction.');
 
-    const issueResponse = await contract.submitTransaction('issue', JSON.stringify(ubl_test));
-
-    const issueResponse2 = await contract.submitTransaction('updateUBLStatus', 'jett-test-nb', '0001', 'REJECTED_BY_RECEIVER');
+    const issueResponse = await contract.submitTransaction('issue', process.argv.slice(2,3).toString());
 
       // process response
     console.log('Process issue transaction response.');
