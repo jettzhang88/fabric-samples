@@ -23,6 +23,42 @@ const CommercialPaper = require('../contract/lib/paper.js');
 const ubl_test = {
     'issuer' : 'jett-test',
     'paperNumber' : '002',
+    'DocumentId' : 'fa36db76-3a06-4913-af47-c622fdb0cc1c',
+    'ID' : '1',
+    'URI' : 'https://api-dev.cn-northwest-1.test.bwtsi.cn/tradeshift/rest/external/documents/fa36db76-3a06-4913-af47-c622fdb0cc1c',
+    'DocumentType' : {
+        'type' : 'invoice'
+    },
+    'CreatedDateTime' : '2019-06-13T06:04:07.437Z',
+    'LastEdit' : '2019-06-13T06:04:07.437Z',
+    'SenderCompanyName' : '新奥集团',
+
+    'ConversationId' : 'b83cf0e0-1caf-4e68-aacb-8f72a0678235',
+    'ReceiverCompanyName' : '苏州卡说信息技术有限公司',
+
+    'ItemInfos' : [ {
+        'type' : 'document.currency',
+        'value' : 'CNY'
+    }, {
+        'type' : 'document.total',
+        'value' : '11.70'
+    }, {
+        'type' : 'document.issuedate',
+        'value' : '2019-06-13'
+    } ],
+    'ProcessState' : 'PENDING',
+    'ConversationStates' : [ {
+        'Axis' : 'PROCESS',
+        'State' : 'PENDING'
+    }, {
+        'Axis' : 'DELIVERY',
+        'State' : 'SENT'
+    } ],
+    'UnifiedState' : 'DELIVERED',
+    'CopyIndicator' : false,
+    'ConnectionId' : 'fd155f86-459b-59c2-8483-2ecb9157a8a8',
+    'OtherPartCompanyAccountId' : 'd4a22460-2470-49e9-9a57-dde334f560b1',
+    'Deleted' : false,
     'TenantId' : '5ecdf59d-7cc1-4dcc-8738-005f477a5225'
 };
 
