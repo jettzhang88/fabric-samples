@@ -39,6 +39,10 @@ class PaperList extends StateList {
             });
             result = await iterator.next();
         }
+        response.push({
+            key: result.value.key,
+            value: result.value.value.toBuffer().toString()
+        });
         return response;
     }
 
