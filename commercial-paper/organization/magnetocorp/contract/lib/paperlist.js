@@ -35,7 +35,7 @@ class PaperList extends StateList {
         while (!result.done) {
             response.push({
                 key: result.value.key,
-                value: result.value.value.toBuffer().toString()
+                value: JSON.parse(result.value.value.toBuffer().toString())
             });
             result = await iterator.next();
         }
