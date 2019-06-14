@@ -35,12 +35,11 @@ class PaperList extends StateList {
         while (!result.done) {
             response.push({
                 key: result.value.key,
-                value: JSON.parse(result.value.value.toBuffer().toString())
+                value: result.value.value.toBuffer().toString()
             });
             result = await iterator.next();
         }
-
-        return JSON.stringify(response);
+        return response;
     }
 
     async get_with_empty(){
